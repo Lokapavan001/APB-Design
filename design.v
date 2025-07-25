@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module apb_slave_fsm #(
+module apb_slave #(
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 32,
     parameter REG_COUNT  = 4
