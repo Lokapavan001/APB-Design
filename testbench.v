@@ -22,7 +22,7 @@
 
 `timescale 1ns/1ps
 
-module tb_apb_slave_fsm;
+module tb_apb_slave;
 
   // Parameters
   localparam DATA_WIDTH = 32;
@@ -42,7 +42,7 @@ module tb_apb_slave_fsm;
   wire                     PSLVERR;
 
   // DUT instantiation
-  apb_slave_fsm #(
+  apb_slave #(
     .DATA_WIDTH(DATA_WIDTH),
     .ADDR_WIDTH(ADDR_WIDTH),
     .REG_COUNT(REG_COUNT)
